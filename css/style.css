@@ -987,15 +987,15 @@ ul {
 }
 .team_box {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .team_box .team_item {
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: center;
-}
-.team_box .team_item img {
-  width: 100%;
 }
 .team_box .team_desc {
   padding: 0 20px;
@@ -1017,6 +1017,18 @@ ul {
   text-transform: capitalize;
 }
 
+@media (min-width: 530px) {
+  .team_box {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px 4%;
+  }
+  .team_box .team_item {
+    width: 48%;
+  }
+}
 @media (min-width: 768px) {
   .team .xamkorlar_info a {
     margin: 0;
