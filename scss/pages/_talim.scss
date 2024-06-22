@@ -1,0 +1,144 @@
+.talim {
+  margin: 200px 0 100px;
+
+  &_info {
+    h1 {
+      color: #2E3038;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 42px;
+      text-transform: uppercase;
+      padding: 20px 0;
+    }
+  }
+
+  &_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 1.5%;
+
+    .talim_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #CCC;
+      padding: 20px 10px 15px 15px;
+
+      h3 {
+        padding-left: 8px;
+        color: #2E3038;
+        font-family: Michroma;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      >img {
+        padding: 10px;
+        width: 60%;
+      }
+
+      p {
+        color: rgba(46, 48, 56, 0.60);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 10px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 8px 0;
+        color: #184AFB;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .talim {
+    &_box {
+      .talim_item {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .talim {
+    &_info {
+      h1 {
+        font-size: 40px;
+        line-height: 52px;
+      }
+    }
+
+    &_box {
+      .talim_item {
+        width: 48%;
+        padding: 48px 35px 26px 32px;
+
+        >img {
+          padding: 28px;
+          padding-right: 0;
+        }
+
+        p {
+          padding-bottom: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .talim {
+    &_info {
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        width: 68%;
+      }
+    }
+
+    &_box {
+      .talim_item {
+        width: 31%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  .talim {
+    &_info {
+      h1 {
+        width: 60%;
+        padding-top: 0;
+        padding-bottom: 60px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .talim {
+    &_info {
+      h1 {
+        width: 55%;
+      }
+    }
+  }
+}

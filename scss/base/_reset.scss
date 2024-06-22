@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Michroma&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.dn {
+  display: none;
+}
+
+.df {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  // background-image: url(../../img/logo_img.svg);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  >section {
+    width: 92%;
+  }
+}
+
+.section_head {
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+
+  h3 {
+    color: #56585E;
+    font-family: Michroma;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding-left: 40px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: #184AFB;
+      border-radius: 50%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
