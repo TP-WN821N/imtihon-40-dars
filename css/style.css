@@ -1034,36 +1034,36 @@ ul {
     margin: 0;
   }
 }
-s .hero {
+.hero {
   margin: 60px auto;
   display: flex;
   align-items: start;
   flex-direction: column;
 }
-s .hero_info {
+.hero_info {
   display: grid;
   grid-template-columns: auto;
   width: 92%;
   gap: 25px;
   padding-bottom: 20px;
 }
-s .hero_info h1 {
+.hero_info h1 {
   color: #2E3038;
   font-size: 36px;
   font-weight: 600;
   line-height: 50px;
   text-transform: uppercase;
 }
-s .hero_info p {
+.hero_info p {
   color: #828388;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
-s .hero_img {
+.hero_img {
   width: 100%;
 }
-s .hero_img img {
+.hero_img img {
   width: 100%;
 }
 
