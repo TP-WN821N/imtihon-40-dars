@@ -3,12 +3,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 20px;
 
   >div {
     width: 92%;
   }
 
   .footer_logo {
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+
     a {
       color: #2E3038;
       font-size: 20px;
