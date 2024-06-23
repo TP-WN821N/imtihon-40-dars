@@ -1,9 +1,9 @@
 .footer {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding-bottom: 20px;
+  width: 100%;
 
   >div {
     width: 92%;
@@ -27,7 +27,7 @@
 
   .footer_body {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 46% 46%;
     gap: 40px;
 
     .footer_list {
@@ -58,7 +58,6 @@
       gap: 20px;
       display: flex;
       flex-direction: column;
-      // margin: 40px 0;
 
       .footer_item {
         width: 80%;

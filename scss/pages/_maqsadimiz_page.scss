@@ -1,0 +1,178 @@
+.about_hero {
+  .maqsadimiz_page-desc {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+
+    p {
+      color: #828388;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      padding: 10px 0 20px;
+    }
+
+    a {
+      color: #184AFB;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.16px;
+      text-transform: capitalize;
+      padding: 6px 60px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+  }
+
+  .bosqichli_maqsad {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid #ccc;
+
+    h1 {
+      color: #2E3038;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 52px;
+      padding-bottom: 40px;
+      text-transform: capitalize;
+    }
+
+    .maqsadP_box {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 40px;
+
+      .maqsadP_item {
+        width: 100%;
+
+        .img_box {
+          width: 100%;
+          background-color: #f5f5f5;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          margin-bottom: 15px;
+
+          img {
+            width: 60%;
+            padding: 10% 0;
+          }
+        }
+
+        p {
+          color: #2E3038;
+          font-family: Michroma;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.14px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .maqsad_rejalar {
+    padding-top: 40px;
+    border-bottom: 1px solid #ccc;
+
+    &:nth-child(3) {
+      border: none;
+      margin: 0;
+    }
+
+    .rejalar_desc {
+      max-width: 405px;
+
+      h2 {
+        position: relative;
+        color: #141E1F;
+        font-family: Michroma;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        padding-left: 50px;
+        margin-bottom: 20px;
+
+        &::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          background-color: #184AFB;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+
+      p {
+        color: #3D5A5C;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.margin_block {
+  margin: 0;
+}
+
+@media (min-width: 550px) {
+  .about_hero {
+    .maqsad_rejalar {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .about_hero {
+    .maqsadimiz_page-desc {
+      display: flex;
+      gap: 30px;
+
+      a {
+        height: fit-content;
+        padding-top: 10px;
+      }
+    }
+
+    .bosqichli_maqsad {
+      .maqsadP_box {
+        grid-template-columns: auto auto;
+        gap: 40px 2%;
+
+        .maqsad_item {
+          width: 49%;
+
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about_hero {
+    .maqsadimiz_page-desc {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        width: 70%;
+      }
+    }
+
+    .rejalar_box {
+      padding-top: 50px;
+    }
+  }
+}
