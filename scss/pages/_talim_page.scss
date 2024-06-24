@@ -1,0 +1,324 @@
+.talim_hero {
+  margin: 40px 0 50px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+
+  .talim_img {
+    order: 1;
+    padding-top: 20px;
+
+    img {
+      width: 92%;
+
+    }
+  }
+
+  .talim_hero-desc {
+    margin: 30px;
+    order: 2;
+
+    h1 {
+      color: #333;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      padding-bottom: 20px;
+
+      li {
+        position: relative;
+        padding-left: 24px;
+        color: #333;
+        font-family: Michroma;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          background-color: #184AFB;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    a {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.16px;
+      text-transform: capitalize;
+      padding: 8px 32px;
+      background-color: #184AFB;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .talim_hero {
+    margin: 80px 0 100px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .talim_hero-desc {
+      h1 {
+        font-size: 40px;
+        line-height: 52px;
+      }
+
+      margin: 60px;
+      order: 1;
+    }
+  }
+}
+
+.talim_body {
+  h1 {
+    color: #2E3038;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+  }
+
+  .talimB_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .talimB_item {
+      border: 1px solid #ccc;
+      padding: 0 20px 20px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+
+      img {
+        order: 1;
+        width: 100%;
+        padding-bottom: 10px;
+      }
+
+      .talimB_desc {
+        order: 2;
+
+        h3 {
+          color: #2E3038;
+          font-family: Michroma;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 26px;
+          text-transform: uppercase;
+          padding-bottom: 15px;
+        }
+
+        p {
+          color: #828388;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 15px;
+        }
+
+        a {
+          color: #184AFB;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.16px;
+          text-transform: capitalize;
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          padding: 6px 22px;
+          border: 1px solid #ccc;
+          border-radius: 20px;
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .talim_body {
+    .talimB_box {
+      .talimB_item {
+        flex-direction: row;
+        padding: 20px;
+        justify-content: space-between;
+
+        .talimB_desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 70%;
+        }
+
+        img {
+          order: 2;
+          padding: 0;
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .talim_body {
+    padding-left: 25%;
+  }
+}
+
+.talim_qadamlar {
+  padding: 40px 0;
+
+  .qadamlar_info {
+    h1 {
+      color: #2E3038;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 44px;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+    }
+  }
+
+  .qadam_box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .qadam_item {
+      border-bottom: 1px solid #ccc;
+
+      img {
+        padding-bottom: 20px;
+      }
+
+      p {
+        color: rgba(46, 48, 56, 0.60);
+        font-family: Michroma;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .talim_qadamlar {
+    .qadam_box {
+      flex-direction: row;
+      gap: 40px 4%;
+
+      .qadam_item {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .talim_qadamlar {
+    padding: 100px 0 100px 25%;
+  }
+}
+
+.ishlarimiz {
+  padding-bottom: 40px;
+
+  h1 {
+    color: #2E3038;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  .ishlarimiz_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .ishlarimiz_item {
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+
+      img {
+        width: 80%;
+        padding-bottom: 20px;
+      }
+
+      .isglarimiz_desc {
+        h2 {
+          color: #56585E;
+          font-family: Michroma;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 36px;
+          padding-bottom: 20px;
+        }
+
+        p {
+          color: #828388;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .ishlarimiz {
+    .ishlarimiz_box {
+      .ishlarimiz_item {
+        padding: 40px 0 40px 40px;
+        flex-direction: row;
+        gap: 5%;
+
+        img {
+          width: 40%;
+          padding: 0;
+          // width: fit-content;
+        }
+
+        .isglarimiz_desc {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .ishlarimiz {
+    padding-left: 25%;
+  }
+}
